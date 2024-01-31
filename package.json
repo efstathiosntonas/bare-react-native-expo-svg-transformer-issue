@@ -4,16 +4,19 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator 'iPhone 13'",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
-    "@op-engineering/op-sqlite": "^2.0.15",
+    "@apollo/client": "^3.9.0",
+    "@op-engineering/op-sqlite": "2.0.16",
     "expo": "50.0.2",
+    "graphql": "^16.8.1",
+    "graphql-ws": "^5.14.3",
     "react": "18.2.0",
-    "react-native": "0.73.2",
+    "react-native": "0.73.3",
     "react-native-svg": "^14.1.0"
   },
   "devDependencies": {

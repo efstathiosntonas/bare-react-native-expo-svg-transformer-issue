@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edbead03-3901-4e6c-9fea-0414c9d752ca" name="Changes" comment="chore: add issue link on README">
+    <list default="true" id="edbead03-3901-4e6c-9fea-0414c9d752ca" name="Changes" comment="chore: added use_frameworks! :linkage =&gt; :static on Podfile">
+      <change afterPath="$PROJECT_DIR$/ApolloTest.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CustomApolloProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/AwesomeProject.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/AwesomeProject.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -21,6 +25,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -42,23 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/stathis/IdeaProjects/bare_react_native_expo_svg_transformer_issue&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.ios.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/stathis/IdeaProjects/bare_react_native_expo_svg_transformer_issue/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/stathis/IdeaProjects/bare_react_native_expo_svg_transformer_issue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.ios.executor": "Run",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/Users/stathis/.nvm/versions/node/v18.19.0/lib/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/stathis/IdeaProjects/bare_react_native_expo_svg_transformer_issue/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -80,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.ios">
+  <component name="RunManager" selected="npm.start">
     <configuration name="ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -103,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.ios" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.ios" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +134,10 @@
       <workItem from="1704987750956" duration="604000" />
       <workItem from="1705903399459" duration="586000" />
       <workItem from="1705906230219" duration="428000" />
+      <workItem from="1705906925402" duration="251000" />
+      <workItem from="1705910001565" duration="799000" />
+      <workItem from="1706681378753" duration="1626000" />
+      <workItem from="1706713291731" duration="480000" />
     </task>
     <task id="LOCAL-00001" summary="chore: initial commit">
       <option name="closed" value="true" />
@@ -139,7 +155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704817708691</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: add @op-engineering/op-sqlite, crashes on static linkage">
+      <option name="closed" value="true" />
+      <created>1705906997419</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705906997419</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: added use_frameworks! :linkage =&gt; :static on Podfile">
+      <option name="closed" value="true" />
+      <created>1705907102809</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705907102809</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,10 +181,24 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="chore: initial commit" />
     <MESSAGE value="chore: add issue link on README" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add issue link on README" />
+    <MESSAGE value="chore: add @op-engineering/op-sqlite, crashes on static linkage" />
+    <MESSAGE value="chore: added use_frameworks! :linkage =&gt; :static on Podfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: added use_frameworks! :linkage =&gt; :static on Podfile" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+    },
+    {
+    },
+    {
+    },
+    {
+    },
     {
     },
     {
