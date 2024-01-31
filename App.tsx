@@ -24,13 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  gql,
-  useQuery,
-} from '@apollo/client';
+
 import CustomApolloProvider from './CustomApolloProvider.tsx';
 import ApolloTest from './ApolloTest.tsx';
 
